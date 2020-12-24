@@ -12,3 +12,5 @@ public void Input(int people, int stud)
             else Console.WriteLine("There are all seats taken");
 
         }
+
+-----------------------------------//end of the class

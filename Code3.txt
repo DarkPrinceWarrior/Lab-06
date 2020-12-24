@@ -1,0 +1,24 @@
+ public void Exit(int people, int stud)
+        {
+           
+            if (this.AllpeopleInBus - people - stud > 0)
+            {
+                if (this.students >= stud)
+                {
+                    this.students -= stud;
+                    this.AllpeopleInBus += this.students;
+                    Console.WriteLine($"Got out {stud} students");
+                }
+                if (this.simplePeople >= people)
+                {
+                    this.simplePeople -= people;
+                    this.AllpeopleInBus += this.simplePeople;
+                    Console.WriteLine($"Got out {people} ordinary people");
+                }
+              
+
+                
+            }
+            else Console.WriteLine("The number of people in the bus less than that value you're trying to pass as parameter");
+
+        }
