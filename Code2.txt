@@ -1,0 +1,14 @@
+public void Input(int people, int stud)
+        {
+            
+            if (this.AllpeopleInBus + people + stud <= this.capacity)
+            {
+                Console.WriteLine($"Entered {stud} students and {people} ordinary people");
+                this.students += stud;
+                this.simplePeople += people;
+                this.AllpeopleInBus += this.students;
+                this.AllpeopleInBus += this.simplePeople;
+            }
+            else Console.WriteLine("There are all seats taken");
+
+        }
